@@ -3,7 +3,7 @@ const app = express();
 // const cors = require('cors')
 app.use((req, res, next) => {
   
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+    res.setHeader("Access-Control-Allow-Origin", "https://6592f199541fd5ddaa005114--imaginative-mooncake-18f71d.netlify.app/");
     res.header(
         "Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept"
