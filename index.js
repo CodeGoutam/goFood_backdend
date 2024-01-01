@@ -18,5 +18,8 @@ app.use("/api", require("./signUp"));
 app.use("/api", require("./signIn"));
 app.use("/api", require("./Orders"));
 app.use("/api", require("./Myorders"));
+app.use("/",()=>{
+    console.log("backend")
+})
 
 app.listen(process.env.BASE_URL || 5000);

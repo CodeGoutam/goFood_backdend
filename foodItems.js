@@ -18,5 +18,6 @@ router.post("/fooditem", (req, res) => {
     } catch (e) {
         console.log(e);
     }
+    console.log("fooditems")
 });
 module.exports = router;
