@@ -3,7 +3,7 @@ const app = express();
 // const cors = require('cors')
 app.use((req, res, next) => {
 
-    res.setHeader("Access-Control-Allow-Origin", "0.0.0.0");
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.header(
         "Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept"
