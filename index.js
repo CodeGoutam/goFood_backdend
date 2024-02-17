@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
-// const cors = require('cors')
+const cors = require('cors')
 const FRONT_URL = process.env.FRONT_URL
 app.use((req, res, next) => {
 
-    res.setHeader("Access-Control-Allow-Origin", `${FRONT_URL} || http://localhost:3000`);
+    res.setHeader("Access-Control-Allow-Origin", `https://e-commerce-f-eight.vercel.app`);
     res.header(
         "Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept"
@@ -26,4 +26,4 @@ app.use("/", (req, res) => {
     console.log("backend")
 })
 
-app.listen(process.env.BASE_URL || 5000);
+app.listen("https://go-food-backdend.vercel.app/");
